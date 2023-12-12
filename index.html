@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- botstrap css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <!-- botstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        #BannerSection {}
+
+
+        .bannerBlock {
+            position: relative;
+        }
+
+        .bannerBlock img {
+            z-index: -1;
+        }
+
+        .bannerBlock h3 {
+            text-align: center;
+            position: absolute;
+            color: white;
+            font-weight: 700;
+            top: 280px;
+            right: 280px;
+            font-size: 50px;
+            z-index: 2;
+        }
+
+        .bannerBlock p {
+            text-align: center;
+            position: absolute;
+            color: rgb(218, 218, 218);
+            top: 420px;
+            right: 100px;
+            left: 80px;
+            z-index: 2;
+        }
+
+
+
+
+        .box-2 {
+            width: 150px;
+            height: 40px;
+            color: white;
+            background-color: tomato;
+            border-radius: 5px;
+            font-weight: 500;
+            margin-top: 10px;
+            position: absolute;
+            bottom: 180px;
+            left: 500px;
+            z-index: 2;
+        }
+
+        .box-2 h5 {
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+        }
+
+        .black-2 {
+            width: 1110px;
+            height: 740px;
+            background-color: black;
+            opacity: .7;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+
+
+
+
+
+
+
+
+
+        #angularsection {
+            padding: 100px;
+            /* background-image: url(images/corporate-shake-hands.jpg);
+            background-position: cover;
+            background-size: cover; */
+        }
+
+        .angularblock {}
+
+        .image {
+            position: relative;
+        }
+
+        .angularblock h1 {
+            font-size: 50px;
+            color: rgb(216, 18, 18);
+            position: absolute;
+            top: 550px;
+            left: 50px;
+        }
+
+
+
+
+
+        #Choosesection {
+            padding: 100px 0px;
+        }
+
+        .choose {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .choose h3 {
+            font-weight: 700;
+        }
+
+        .choose p {
+            color: rgb(78, 78, 78);
+            padding-left: 200px;
+            padding-right: 150px;
+        }
+
+        .chooseblock {
+            width: 429px;
+            padding: 0px 40px;
+        }
+
+        .bi-lightning-charge {
+            color: tomato;
+            font-size: 50px;
+            margin-left: 150px;
+
+        }
+
+        .chooseblock h3 {
+            text-align: center;
+            color: tomato;
+        }
+
+
+        .chooseblock p {
+            text-align: center;
+            color: rgb(78, 78, 78);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .Aboutsection {
+            padding: 0px 0px 100px;
+            background-color: rgb(244, 243, 243);
+        }
+
+        .aboutblock {}
+
+        .aboutblock h3 {
+            font-weight: 700;
+            margin: 40px 0px 10px;
+        }
+
+        .aboutblock p {
+            color: rgb(78, 78, 78);
+        }
+
+
+        .aboutblock button {
+            border: solid tomato 1px;
+            background-color: tomato;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .aboutblock-1 {
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            top: 0px;
+            left: -30px;
+        }
+
+        .box p {
+            color: rgb(233, 233, 233);
+        }
+
+        .box p::before {
+            content: "5";
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+            margin-right: 3px;
+        }
+
+
+
+
+
+        #portfoliosection {
+            padding: 100px 0px 0px;
+        }
+
+        .port {
+            text-align: center;
+        }
+
+        .port h3 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .port p {
+            width: 550px;
+            margin-left: 270px;
+            color: rgb(78, 78, 78);
+            margin-bottom: 30px;
+        }
+
+        .portfolio img {
+            width: 300px;
+            height: 250px;
+        }
+
+
+
+
+
+
+
+        #Pricingsection {
+            padding: 100px 0px 0px;
+        }
+
+        .pricing {}
+
+        .pricing {
+            text-align: center;
+        }
+
+        .pricing h3 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .pricing p {
+            width: 550px;
+            margin-left: 270px;
+            color: rgb(78, 78, 78);
+            margin-bottom: 30px;
+        }
+
+        .portfolioblock {
+            width: 400px;
+            height: 550px;
+            background-color: rgb(246, 246, 246);
+            text-align: center;
+            padding: 80px 70px 0px;
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+
+        .portfolioblock h3 {
+            font-weight: 700;
+        }
+
+        .portfolioblock h1 {
+            font-weight: 900;
+            color: tomato;
+        }
+
+        .portfolioblock p {
+            line-height: 40px;
+            color: rgb(78, 78, 78);
+        }
+
+        .portfolioblock button {
+            border: solid tomato 1px;
+            /* background-color: tomato; */
+            color: tomato;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+
+
+
+
+
+
+
+
+        #meetsection {
+            padding: 0px 0px 120px;
+        }
+
+        .meet {
+            text-align: center;
+        }
+
+        .meet h3 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .meet p {
+            width: 550px;
+            margin-left: 270px;
+            color: rgb(78, 78, 78);
+            margin-bottom: 30px;
+        }
+
+        .meetblock {
+            position: relative;
+        }
+
+        .meetblock img {
+            width: 350px;
+            height: 400px;
+        }
+
+        .boxes {
+            width: 250px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            padding: 20px 10px;
+        }
+
+        .boxes h3 {
+            font-weight: 700;
+        }
+
+        .bi-facebook {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+            top: 25px;
+        }
+
+        .bi-instagram {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+            top: 50px;
+        }
+
+        .bi-linkedin {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+            top: 75px;
+        }
+
+
+
+        #imagesection {
+            padding: 60px 0px;
+            background-image: url(images/corporate-shake-hands.jpg);
+            background-size: cover;
+            background-position: cover;
+            position: relative;
+
+        }
+
+        .imageblock {
+            text-align: center;
+        }
+
+        .imageblock img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            z-index: ;
+        }
+
+        .imageblock h3 {
+            color: white;
+            font-weight: 700px;
+            z-index: 2;
+        }
+
+        .imageblock p {
+            color: white;
+            z-index: 2;
+        }
+
+        .purble {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: .5;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+
+
+
+
+
+
+
+
+
+        #contactsection {
+
+            margin: 100px 0px;
+            padding: 60px 0px;
+            /* background-image: url(images/img_20200110_150014_bokeh-2-100829035-orig-3.webp);
+            background-position: cover;
+            background-size: cover; */
+            background-color: black;
+        }
+
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact h3 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .contact p {
+            width: 550px;
+            margin-left: 270px;
+            color: rgb(204, 204, 204);
+            margin-bottom: 30px;
+        }
+
+        .contactblock {
+            margin-bottom: 10px;
+        }
+
+        .name {
+            width: 550px;
+            height: 50px;
+            border: solid rgb(173, 171, 171) 1px;
+            border-radius: 5px;
+            padding: 10px 0px 0px 20px;
+            opacity: .5;
+            margin: 0px 10px;
+        }
+
+        .name h5 {
+            color: white;
+            opacity: .5;
+        }
+
+        .number {
+            width: 550px;
+            height: 50px;
+            border: solid rgb(173, 171, 171) 1px;
+            border-radius: 5px;
+            padding: 10px 0px 0px 20px;
+            opacity: .5;
+            margin: 0px 10px;
+        }
+
+        .number h5 {
+            color: white;
+            opacity: .5;
+        }
+
+        .contactblock-1 {}
+
+        .message {
+            width: 1120px;
+            height: 400px;
+            border: solid rgb(173, 171, 171) 1px;
+            border-radius: 5px;
+            padding: 20px 0px 0px 20px;
+            opacity: .5;
+            margin: 0px 10px;
+        }
+
+        .message h5 {
+            color: white;
+            opacity: .5;
+        }
+
+
+
+
+        #footerSection {
+            background-color: rgb(69, 69, 69);
+
+        }
+
+        /* #footer {
+            width: 255px;
+            height: 262px;
+
+        } */
+
+        .footerblock {
+            color: #ffffff;
+            margin: 20px 0px 16px;
+        }
+
+        .footerblock h3 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+
+
+
+
+
+
+        #useful {
+            width: 285px;
+            height: 262px;
+            padding: 0px 15px;
+            color: #fff;
+            float: left;
+            margin-top: 25px;
+        }
+
+        #useful h5 {
+            font-size: 20px;
+            padding: 0px 0px 26px;
+        }
+
+        #useful ul {
+            list-style-type: none;
+        }
+
+        #useful ul,
+        li {
+            font-size: 16px;
+            padding: 0px 0px 10px;
+        }
+
+
+
+
+
+
+
+        #quick {
+            width: 285px;
+            height: 262px;
+            padding: 0px 15px;
+            color: #fff;
+            float: left;
+            margin-top: 25px;
+        }
+
+        #quick h5 {
+            font-size: 20px;
+            padding: 0px 0px 26px;
+        }
+
+        #quick ul {
+            list-style-type: none;
+        }
+
+        #quick ul,
+        li {
+            font-size: 16px;
+            padding: 0px 0px 10px;
+        }
+
+
+
+
+
+        #address {
+            width: 285px;
+            height: 262px;
+            padding: 0px 15px;
+            color: #fff;
+            float: left;
+            margin-top: 25px;
+        }
+
+        #address h5 {
+            font-size: 20px;
+            padding: 0px 0px 26px;
+        }
+
+        #address ul {
+            list-style-type: none;
+
+        }
+
+        #address ul,
+        li {
+            font-size: 16px;
+            padding: 0px 0px 10px;
+            padding-inline-start: 0px;
+        }
+
+
+        .bi-pin-map {
+            padding: 0px 10px 0px 0px;
+        }
+
+
+        .bi-telephone {
+            padding: 0px 10px 0px 0px;
+        }
+
+
+        .bi-envelope {
+            padding: 0px 10px 0px 0px;
+        }
+
+
+
+        .bi-telephone {
+            padding: 0px 10px 0px 0px;
+        }
+
+
+
+
+
+
+        #CopySection {
+            background-color: black;
+            padding: 10px 0px;
+        }
+
+        .box-03 {
+            width: 1110px;
+            height: 1px;
+            background-color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .Copy h6 {
+            color: rgb(229, 225, 219);
+
+            font-weight: lighter;
+            margin-left: 430px;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+            <a href="" class="navbar-brand">Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="home">
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">KNOW US</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">SERVICES</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">WORK</a></li>
+
+                        <li class="nav-item"><a href="" class="nav-link">CLIENTS</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="BannerSection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="bannerBlock">
+                        <img src="images/corporate-shake-hands.jpg" width="100%" alt="">
+
+                        <h3>Angular 12 Bootstrap<br>
+                            Website Template</h3>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error vitae eius, saepe est aliquid
+                            eveniet assumenda ut quisquam quod autem vel! Totam doloremque perferendis repellendus quae
+                            sit. Iure, delectus ducimus.</p>
+
+                        <div class="box-2">
+                            <h5>Learn More</h5>
+                        </div>
+                        <div class="black-2"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Choosesection">
+
+        <div class="container">
+
+            <div class="choose">
+
+                <h3>Why Choose Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident enim ducimus consequuntur,
+                    minima placeat temporibusunde magnam pariatur quod odit praesentium,
+                    sapiente ut quo a.</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="chooseblock">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Choose Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident enim ducimus.</p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="chooseblock">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Choose Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident enim ducimus.</p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="chooseblock">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Choose Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident enim ducimus.</p>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <section id="Aboutsection">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="aboutblock">
+                        <h3>About Our Creative<br>
+                            Process
+                        </h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ipsam cum tenetur
+                            dolorum. Beatae quae quod aperiam dolore eius. Soluta, minima. Perspiciatis eaque est
+                            nostrum cum, nemo quae? Porro!</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi ipsam cum tenetur
+                            dolorum. Beatae quae quod aperiam dolore eius. Soluta, minima. Perspiciatis eaque est
+                            nostrum cum, nemo quae? Porro!</p>
+
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="aboutblock-1">
+                        <img src="images/Budget Friendly Marketing Tip.jpg" width="570px" alt="">
+
+                        <div class="box">
+                            <p>Years Of <br>Experience</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="portfoliosection">
+
+        <div class="container">
+            <div class="port">
+                <h3>
+                    Our Portfolio
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nulla obcaecati at optio illum.
+                    Reiciendis, ipsa, quaerat.
+                </p>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/617aabbf5c4aa2a59dec36ba113d43fd.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/Budget Friendly Marketing Tip.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/corporate-shake-hands.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/i (1).webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/Budget Friendly Marketing Tip.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/617aabbf5c4aa2a59dec36ba113d43fd.jpg" alt="">
+                    </div>
+                </div>
+
+
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/i (1).webp" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="portfolio">
+                        <img src="images/corporate-shake-hands.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <section id="Pricingsection">
+        <div class="container">
+
+            <div class="pricing">
+                <h3>
+                    Pricing Plans
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nulla obcaecati at optio illum.
+                    Reiciendis, ipsa, quaerat.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="portfolioblock">
+
+                        <h3>Price</h3>
+
+                        <h1>$240</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam itaque eaque iusto magni
+                            aperiam ducimus similique doloribus!</p>
+                        <button>Learn More</button>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="portfolioblock">
+
+                        <h3>Price</h3>
+
+                        <h1>$240</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam itaque eaque iusto magni
+                            aperiam ducimus similique doloribus!</p>
+                        <button>Learn More</button>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="portfolioblock">
+
+                        <h3>Price</h3>
+
+                        <h1>$240</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam itaque eaque iusto magni
+                            aperiam ducimus similique doloribus!</p>
+                        <button>Learn More</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="meetsection">
+
+        <div class="container">
+
+            <div class="meet">
+                <h3>
+                    Meet The Team
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nulla obcaecati at optio illum.
+                    Reiciendis, ipsa, quaerat.
+                </p>
+            </div>
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="meetblock">
+
+                        <img src="images/CEO-Image.jpg" alt="">
+
+                        <div class="boxes">
+                            <h3>Parthi</h3>
+                            <p>Developer</p>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="meetblock">
+
+                        <img src="images/CEO-Image.jpg" alt="">
+
+                        <div class="boxes">
+                            <h3>Parthi</h3>
+                            <p>Developer</p>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+
+                    <div class="meetblock">
+
+                        <img src="images/CEO-Image.jpg" alt="">
+
+                        <div class="boxes">
+                            <h3>Parthi</h3>
+                            <p>Developer</p>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="imagesection">
+
+
+        <div class="container">
+
+
+
+            <div class="imageblock">
+
+                <img src="images/CEO-Image.jpg" alt="">
+                <h3>Parthi</h3>
+                <p>Developer</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea alias quae, eum, et labore, voluptas ex
+                    rerum sequi accusamus inventore sint? Repellendus veritatis vero fugit alias tenetur accusamus
+                    adipisci neque?</p>
+
+                <div class="purble"></div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="contactsection">
+
+        <div class="container">
+
+            <div class="contact">
+                <h3>
+                    Contact Us
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nulla obcaecati at optio illum.
+                    Reiciendis, ipsa, quaerat.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="contactblock">
+
+                        <div class="name">
+                            <h5>Name</h5>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="contactblock">
+
+                        <div class="number">
+                            <h5>Number</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="contactblock">
+
+                        <div class="name">
+                            <h5>Name</h5>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xl-6 col-md-12">
+
+                    <div class="contactblock">
+
+                        <div class="number">
+                            <h5>Number</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-12 col-sm-12">
+                    <div class="contactblock-1">
+                        <div class="message">
+                            <h5>Message</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section id="footerSection">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+
+                    <div class="footerblock">
+                        <h3>Bootstrap</h3>
+
+
+                        <P>Round whitefish flat loach potted killifish ronquil. Long-finned pike escolar
+                            northern pike escolar nor thern squawfish eel.</P>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12">
+
+                    <div id="useful">
+                        <h5>Useful Links</h5>
+
+                        <ul>
+                            <li>Software Development</li>
+                            <li>Web Development</li>
+                            <li>Community Meetups</li>
+                            <li>Cloud and Develops</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12">
+
+                    <div id="quick">
+                        <h5>Quick Link</h5>
+
+                        <ul>
+                            <li>Become an Affiliate</li>
+                            <li>About Drone</li>
+                            <li>Community Meetups</li>
+                            <li>Why Buy With Us?</li>
+                            <li>Blog and News</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12">
+
+                    <div id="address">
+                        <h5>Address Us</h5>
+
+                        <ul>
+                            <li> <i class="bi bi-pin-map"></i>378 FA Tower, William
+                                SBl 2123,</li>
+                            <li><i class="bi bi-telephone"></i>(+990) 698 598 631</li>
+                            <li><i class="bi bi-envelope"></i>demo@example.com</li>
+                            <li><i class="bi bi-telephone"></i>>Time: 9.00am-4.00pm</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="Copy">
+
+                        <div class="box-03"></div>
+
+                        <h6>Copyright Bootstrap 2023</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
